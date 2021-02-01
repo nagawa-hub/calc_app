@@ -1,14 +1,15 @@
 import Link from "next/link";
+import Layout from "../components/Layout";
 import style from "../static/Style";
 
-export default () =><div>
-  {style}
-  <h1>Next.js</h1>
-  <p>This is other page.</p>
-  <hr />
-  <div>
-    <Link href="/">
-      <button>&lt;&lt; Back to Index page</button>
-    </Link>
-  </div>
-</div>
+export default () =>(
+  <Layout header="Other" title="Other page.">
+    <p>This is other page.</p>
+    <hr/>
+    <div>
+      <Link href="/">
+        <button>&lt;&lt; Back to Top</button>
+      </Link>
+    </div>
+  </Layout>
+)
