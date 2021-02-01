@@ -1,16 +1,14 @@
 import Link from "next/link";
-import Counter from "../components/Counter";
 import style from "../static/Style";
 
 export default () =><div>
   {style}
   <h1>Next.js</h1>
-  <p>Welcome</p>
+  <p>This is other page.</p>
   <hr />
   <div>
-    <Link href="/other">
-      <button>Go to Other page &gt;&gt;</button>
+    <Link href="/">
+      <button>&lt;&lt; Back to Index page</button>
     </Link>
   </div>
-  <Counter />
 </div>
